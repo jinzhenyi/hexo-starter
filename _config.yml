@@ -77,7 +77,7 @@ exclude:
 ignore:
 
 # Extensions
-theme: landscape
+theme: keep
 
 # Deployment
 deploy:
