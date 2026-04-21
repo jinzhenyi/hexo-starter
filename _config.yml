@@ -77,7 +77,7 @@ exclude:
 ignore:
 
 # Extensions
-theme: keep
+theme: fluid
 
 # Deployment
 deploy:
