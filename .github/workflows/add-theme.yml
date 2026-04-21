@@ -13,15 +13,15 @@ jobs:
       - name: 拉取仓库代码
         uses: actions/checkout@v4
 
-      - name: 下载 Keep 主题
+      - name: 下载 fluid 主题
         run: |
-          git clone https://github.com/XPoet/hexo-theme-keep.git themes/keep
-          rm -rf themes/keep/.git
+          git clone https://github.com/fluid-dev/hexo-theme-fluid.git themes/fluid
+          rm -rf themes/fluid/.git
 
       - name: 提交主题文件到仓库
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add themes/keep
-          git commit -m "手动添加 Keep 主题" || echo "没有新变更"
+          git add themes/fluid
+          git commit -m "手动添加 fluid 主题" || echo "没有新变更"
           git push
